@@ -103,13 +103,13 @@ A real-time **security guard for AI chatbots**. It reads every message going *in
 ```bash
 docker build -t guardrail .
 docker run -p 8000:8000 -e OPENAI_API_KEY="your-own-key" guardrail
-```or
+```
 Then open `http://localhost:8000/docs` — a live API with:
 - `POST /scan_input` — check a message (allow / review / block)
 - `POST /check_output` — check a reply for leaks
 - `POST /threat_search` — search the live attack library
 - `GET /health` — service status
-----or
+----
 1. Install Python (once). Go to python.org, download Python 3.10+, run the installer, and tick "Add Python to PATH."
 2. Download the project. On your GitHub page, click the green Code button → Download ZIP → unzip it. (Or git clone if you know git.)
 3. Open a terminal in the folder. Open Command Prompt (or Anaconda Prompt), then type cd  and drag the aac folder into the window, press Enter.
